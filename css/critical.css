@@ -1,0 +1,167 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #hero {
+    font-size: inherit;
+    padding-top: 8.125em;
+    padding-bottom: 9.375em;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #hero:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+  #hero picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -11;
+  }
+  #hero picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #hero .hero-content {
+    max-width: 71.5em;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+  }
+  #hero .hero-content {
+    padding: 0;
+  }
+  #hero .heroText {
+    width: 100%;
+    margin: auto;
+    max-width: 56.875em;
+  }
+  #hero .topper {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primaryAccessible);
+    font-size: 0.8em;
+    display: block;
+    line-height: 1.25em;
+    margin-bottom: 0.625em;
+  }
+  
+  .search {
+    opacity: 85%;
+  }
+
+  .user-cards {
+    opacity: 85%;
+  }
+
+  button {
+    opacity: 85%;
+  }
+
+
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #hero {
+    z-index: 1;
+    overflow: hidden;
+  }
+  #hero .hero-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  #hero h1 {
+    font-size: min(8vw, 4em);
+  }
+  #hero p {
+    margin-bottom: 5em;
+  }
+}
+/* Small Desktop 1300px */
+@media only screen and (min-width: 0em) {
+  #hero {
+    padding-top: 17.0625em;
+    padding-bottom: 19.1875em;
+    background: url("../images/valley.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    min-height: 700px;
+    max-height: 1000px;
+  }
+  #hero picture {
+    display: none;
+  }
+}
+
+/* Dark mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #hero:before {
+    opacity: .8;
+  }
+}
+
+@media (max-width: 430px) {
+  #hero {
+    padding-top: 17.0625em;
+    padding-bottom: 19.1875em;
+    background: url("../images/valleycopy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    min-height: 700px;
+    max-height: 1000px;
+  }
+  #hero picture {
+    display: none;
+  }
+  #hero .hero-content {
+    max-height: 75vh;
+  }
+  #hero .user-cards {
+    grid-template-columns: auto auto;
+    padding-left: 10px;
+  }
+  #hero .card {
+    width: 175px;
+    height: 85px;
+    padding: 15px;
+  }
+}
