@@ -209,6 +209,7 @@ form input, form textarea {
   button {
     width: 179px;
     font-size: 17px;
+    font-color: #000000;
   }
   .main-container {
     display: flex;
