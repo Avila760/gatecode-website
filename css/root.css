@@ -208,6 +208,7 @@ form input, form textarea {
 @media (max-width: 430px) {
   button {
     width: 179px;
+    font-size: 17px;
   }
   .main-container {
     display: flex;
