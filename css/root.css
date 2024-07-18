@@ -233,6 +233,9 @@ form input, form textarea {
   #count {
     padding-left: 335px;
   }
+  .user-cards::-webkit-scrollbar-thumb {
+  background: #a9a9a9;
+}
 }
 
 
