@@ -153,7 +153,7 @@
       display: none;
     }
     #hero .hero-content {
-      max-height: 75vh;
+      max-height: 65vh;
     }
     #hero .user-cards {
       grid-template-columns: auto auto;
