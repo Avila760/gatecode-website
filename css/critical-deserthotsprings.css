@@ -157,7 +157,6 @@
   }
   #hero .user-cards {
     grid-template-columns: auto auto;
-    padding-left: 10px;
   }
   #hero .card {
     width: 175px;
